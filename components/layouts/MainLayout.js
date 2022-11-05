@@ -6,9 +6,9 @@ class MainLayout extends Component {
     render() {
         return (
             <Fragment>
-                {/* <Navig/> */}
+                <Navig/>
                 {this.props.children}
-                {/* <Footer/> */}
+                <Footer/>
             </Fragment>
         );
     }
