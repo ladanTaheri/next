@@ -1,0 +1,221 @@
+.filmCard {
+    max-width: 230px !important;
+    min-width: 230px !important;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    padding: 0px !important;
+    margin-bottom: 24px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    margin-left: 24px;
+    border: 0px;
+    direction: rtl;
+    text-align: right;
+    background-color: #fff;
+    display: inline-flex !important;
+}
+
+.filmCard figure img {
+    width: 237px;
+    height: 340px;
+}
+
+.filmCard figure {
+    cursor: pointer;
+}
+
+.filmCard figure figcaption h6 {
+    font-family: IRANSans;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.filmCard figure figcaption p {
+    font-family: IRANSans;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    line-height: 26px;
+    max-height: 156px;
+    text-align: right;
+}
+
+.filmCard figure figcaption p:before {
+    content: "...";
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+}
+
+.filmCard figure figcaption p:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: transparent;
+}
+
+.filmCard figure figcaption span {
+    margin-left: 4px;
+}
+
+.filmCard figure figcaption span a {
+    position: relative !important;
+    display: inline-block;
+    text-align: center;
+    min-width: 42px;
+    min-height: 26px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: IRANSans;
+    font-size: 12px;
+    padding: 6px 7px;
+    margin-bottom: 8px;
+}
+
+.filmCard figure figcaption span a:hover {
+    background-color: #ffffff;
+    color: #03060a;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mark {
+    color: #ffffff;
+    background: #03060a;
+    width: 46px;
+    height: 46px;
+    border-radius: 15px 0px;
+    -webkit-box-shadow: 1px 1px 2px rgba(3, 6, 10, 0.2);
+    box-shadow: 1px 1px 2px rgba(3, 6, 10, 0.2);
+    margin-bottom: -46px;
+    z-index: 9;
+    cursor: pointer;
+    margin-right: calc(230px - 46px);
+}
+
+.mark img {
+    width: 11px;
+    height: 11px;
+    background: url(/images/svg/card/plus.svg);
+    margin: 18px;
+    background-repeat: no-repeat;
+}
+
+.activeMark {
+    background: #ef1b2b;
+}
+
+.activeMark img {
+    background: url(/images/svg/card/tick.svg);
+    background-repeat: no-repeat;
+}
+
+.markHoverDeactive {
+    background: #2a2e3c;
+}
+
+.markHoverDeactive img {
+    background: url(/images/svg/card/plus.svg);
+    background-repeat: no-repeat;
+}
+
+.markHoverActive {
+    background: #ff6666;
+}
+
+.markHoverActive img {
+    background: url(/images/svg/card/tick.svg);
+    background-repeat: no-repeat;
+}
+
+.film {
+    padding: 15px;
+    max-height: 88px;
+    min-height: 88px;
+}
+
+.film h3 {
+    font-family: IRANSans;
+    font-size: 16px;
+    color: #03060a;
+    line-height: 28px;
+    text-align: right;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.film h3 time {
+    color: #a2a4ab;
+    cursor: pointer;
+}
+
+.film time {
+    color: #a2a4ab;
+    float: right;
+    font-size: 16px;
+}
+
+.ltr h3 {
+    font-family: "NunitoSans";
+    font-size: 16px;
+    font-weight: 600;
+    color: #03060a;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 0px;
+    direction: ltr;
+  }
+  
+  .ltr h3 time {
+    font-family: "NunitoSans";
+    font-size: 14px;
+    font-weight: 600;
+    color: #a2a4ab;
+  }
+  
+  .ltr time {
+    font-family: "NunitoSans";
+    font-size: 14px;
+    font-weight: 600;
+    color: #a2a4ab;
+    float: left;
+  }
+
+.textOverflowRight {
+    margin-top: -25px !important;
+    margin-left: 20px !important;
+    float: left !important;
+}
+.textOverflowLeft {
+    margin-top: -25px !important;
+    margin-right: 5px !important;
+    float: right !important;
+  }
+
+.twoLineRight {
+    margin-top: -25px !important;
+    margin-left: 50px !important;
+    float: left !important;
+}
+.twoLineLeft {
+    margin-top: -25px !important;
+    margin-right: 10px !important;
+    float: right !important;
+  }
+
+.film span {
+    font-size: 14px;
+    color: #a2a4ab;
+    float: right;
+}
+

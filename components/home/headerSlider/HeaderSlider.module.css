@@ -1,0 +1,190 @@
+.carousel {
+  margin-top: 72px;
+}
+
+.carouselCaption {
+  top: 100px;
+  left: 100px;
+  bottom: auto;
+  right: auto;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  direction: rtl;
+}
+
+.carouselCaption p {
+  font-family: IRANSans;
+  padding-bottom: 8px;
+  font-size: 20px;
+  color: #a1a3aa;
+}
+
+.carouselCaption p strong {
+  font-family: IRANSans;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.carouselCaption h3 {
+  font-family: "NunitoSans";
+  font-size: 30px;
+  font-weight: bold;
+  color: #003874;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.carouselCaption button {
+  margin-top: 3px;
+  background: #ee1b2b;
+  width: 160px;
+  height: 46px;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  font-family: IRANSans;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.carouselCaption button img {
+  margin-left: 9px;
+  width: 11px;
+  height: 13px;
+  background-image: url(/images/slider/play-white.svg);
+  background-repeat: no-repeat;
+}
+
+.carouselCaption button:hover {
+  background: #ffffff;
+  color: #03060a;
+}
+
+.carouselCaption button:hover img {
+  background-image: url(/images/slider/play-black.svg);
+  background-repeat: no-repeat;
+}
+
+.onlineScreening h2 {
+  font-family: Anjoman;
+  font-size: 46px;
+  font-weight: bold;
+  color: #003874;
+  padding-bottom: 10px;
+}
+
+.carouselCaption h2 {
+  font-family: Anjoman;
+  font-size: 46px;
+  font-weight: bold;
+  color: #003874;
+  padding-bottom: 10px;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.counter {
+  border: 1px solid #ffffff;
+  width: 290px;
+  height: 72px;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+.counter div {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 63.6px;
+  text-align: center;
+}
+
+.counter div p {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #a1a3aa;
+}
+
+.counter div p strong {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.item {
+  height: 650px;
+  float: right !important;
+}
+
+.w100 {
+  width: 100vw !important;
+}
+
+.btn {
+  margin-top: 2em;
+  padding: .5em 1.2em;
+  border: #a8cf45 solid 3px;
+  color: #a8cf45;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .875em;
+  font-weight: 400;
+  background: #fff;
+}
+.btn:hover {
+  margin-top: 2em;
+  padding: .5em 1.2em;
+  border: #a8cf45 solid 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .875em;
+  font-weight: 400;
+  background:  #a8cf45;
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    display: none !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  .carousel {
+    display: none !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+@media (min-width: 768px) {
+  .carousel {
+    display: flex !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  .carousel {
+    display: flex !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  .carousel {
+    display: flex !important;
+  }
+}

@@ -1,0 +1,136 @@
+.main {
+    background-color: #fff;
+    padding-bottom: 200px;
+    direction: rtl;
+}
+
+.news {
+    width: 1050px;
+    padding-right: 254px;
+    padding-top: 81px;
+    text-align: right;
+}
+
+.news h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #003874;
+    line-height: 64px;
+    margin-bottom: 12px;
+}
+
+.imgMain {
+    width: 800px;
+    height: 400px;
+}
+
+.imgHoverZoom {
+    height: 400px;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+
+.imgHoverZoom img {
+    transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+
+.imgHoverZoom:hover img {
+    transform: scale(1.1);
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #003874;
+    border: 1px solid #003874;
+    border-radius: 0px;
+    margin-bottom: 77px;
+}
+
+.btn:hover {
+    font-size: 16px;
+    font-weight: 600;
+    color: #003874;
+    border: 1px solid #003874;
+    border-radius: 0px;
+}
+
+.news p {
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 24px;
+    color: #000;
+    margin-top: 25px;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #fff;
+    height: 36px;
+    background-color: rgba(46, 51, 65, 0.2);
+    backdrop-filter: blur(10px);
+    background-image: none;
+    width: 800px;
+    margin-top: -36px;
+}
+
+.date p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 13px;
+    padding-top: 6px;
+    color: #fff;
+}
+
+.imgBottom {
+    width: 800px;
+    height: 96px;
+    margin-top: -106px;
+}
+
+.showBrief {
+    /* overflow: hidden;
+    position: relative; */
+    overflow: hidden;
+    line-height: 26px;
+    max-height: 147px;
+    transition: 0.2s;
+}
+
+.showBrief.active {
+    max-height: auto;
+    overflow: hidden;
+    line-height: 26px;
+    transition: 0.2s;
+}
+
+.showBrief:before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+}
+
+.showBrief:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: transparent;
+}
+.tag{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}

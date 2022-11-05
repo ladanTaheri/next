@@ -1,0 +1,66 @@
+.aboutimg {
+    width: 100%;
+    height: auto;
+    /* float: right;    */
+}
+
+.about h2 {
+    font-size: 25px;
+    color: #003874;
+    font-weight: 600;
+}
+
+.about p {
+    line-height: 32px;
+}
+
+.about {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    direction: rtl;
+    text-align: right;
+    display: table;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+    .aboutContainer {
+        width: 100%;
+        padding-right: 0px;
+        margin-right: 0%;
+    }
+    .about div {
+        display: block;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .aboutContainer {
+        width: 100%;
+        padding-right: 0px;
+        margin-right: 0%;
+    }
+    .about div {
+        display: block;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+/* Large devices (desktops, 992px and up) */
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1000px) {
+    .aboutContainer {
+        width: 45%;
+        padding-right: 15px;
+        margin-right: 10%;
+    }
+    .about div {
+        display: table-cell;
+    }
+}

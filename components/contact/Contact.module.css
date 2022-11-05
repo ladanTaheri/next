@@ -1,0 +1,78 @@
+.heading {
+  font-size: 40px;
+  color: #003874;
+  padding-top: 120px;
+  margin-bottom: 20px;
+  font-weight: 600;
+
+}
+
+.icons {
+  color: #a8cf45;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.contact {
+  direction: rtl;
+  text-align: right;
+}
+
+.main {
+  width: 90%;
+  padding: 0px 5% 5% 5%;
+}
+
+.links a {
+  font-weight: 500;
+  text-decoration: none !important;
+  color: #003874;
+}
+
+.links a:hover {
+  color: #a8cf45;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 0.5em 1.2em;
+  border: #a8cf45 solid 3px;
+  color: #a8cf45;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 400;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background;
+  transition-property: color, background;
+  margin-bottom: 20px;
+}
+
+.btn:focus, .btn:hover {
+  background-color: #a8cf45;
+  color: white;
+}
+
+.date {
+  padding-right: 20px;
+}
+
+.message {
+  text-align: right;
+  direction: rtl;
+  font-size: 28px;
+  color: #003874;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.messageBox{
+  padding-left: 30%;
+  display: block;
+}
+.contact_page_map {
+  height: 340px !important;
+  margin-left: 30%;
+}

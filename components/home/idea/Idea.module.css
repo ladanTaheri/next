@@ -1,0 +1,66 @@
+.services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url(/images/home/featue-bg.jpg);
+    backdrop-filter: blur(9px);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000;
+    text-align: right;
+    height: auto;
+}
+
+.services {
+    display: table;
+}
+
+.services div {
+    display: table-cell;
+}
+
+.serviceContainer {
+    width: 45%;
+    padding-right: 10%;
+}
+
+.services h2 {
+    font-size: 25px;
+    color: #003874;
+    font-weight: 600;
+}
+
+.services p {
+    line-height: 32px;
+}
+
+@media (max-width: 576px) {
+    .serviceContainer {
+        width: 80%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .serviceContainer {
+        width: 80%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+/* Large devices (desktops, 992px and up) */
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1000px) {
+    .serviceContainer {
+        width: 45%;
+        padding-right: 10%;
+        padding-left: 0%;
+    }
+}

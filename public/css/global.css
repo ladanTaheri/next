@@ -1,0 +1,115 @@
+@import '../fonts/nunitosans/css/font.css';
+@import '../fonts/iransans/css/font-farsi.css';
+@import '../fonts/anjoman/fontiran.css';
+body {
+    font-family: IRANSans;
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently 
+                                  supported by Chrome and Opera */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a, a:hover, a:active, a:focus, input:hover, input:active, input:focus, button:hover, button:visited, button:active, button:focus, .form-control:focus {
+    outline: none !important;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+input.middle:focus {
+    outline-width: 0;
+}
+
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active {
+    outline: 0px !important;
+    /* -webkit-appearance: none; */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+    bottom: 0;
+    top: auto;
+    opacity: 1;
+    width: 56px;
+    height: 56px;
+}
+
+.carousel-control-next {
+    background-color: #003874;
+    right: 56px;
+    left: auto;
+    border-radius: 20px 0px 0px 0px;
+    -moz-border-radius: 20px 0px 0px 0px;
+    -webkit-border-radius: 20px 0px 0px 0px;
+}
+
+.carousel-control-next:hover {
+    background-color: #a8cf45;
+}
+
+.carousel-control-next .carousel-control-next-icon {
+    background-image: url(/images/slider/arrow-left.svg);
+}
+
+.carousel-control-prev {
+    background-color: #ffffff;
+    right: 0;
+    left: auto;
+    border-radius:  0px;
+    -moz-border-radius:  0px;
+    -webkit-border-radius:  0px;
+}
+
+.carousel-control-prev:hover {
+    background-color: #a8cf45;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon {
+    background-image: url(/images/slider/arrow-right-active.svg);
+}
+
+.carousel-control-prev .carousel-control-prev-icon {
+    background-image: url(/images/slider/arrow-right.svg);
+}
+
+.carousel-indicators {
+    right: auto;
+    left: 138px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.carousel-indicators li {
+    opacity: 0.2;
+    width: 12px;
+    height: 3px;
+}
+
+.carousel-indicators li.active {
+    width: 32px;
+    height: 3px;
+    opacity: 1;
+}
+.product{
+    width: 70% !important;
+    margin-right: 15%;
+    margin-left: 15%;
+}

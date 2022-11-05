@@ -1,0 +1,22 @@
+.main {
+    width: 90%;
+    padding: 0px 5% 5% 5%;
+    direction: rtl;
+    text-align: right;
+}
+
+.heading {
+    font-size: 40px;
+    color: #003874;
+    padding-top: 120px;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+  }
+  
+  .main p {
+      line-height: 38px;
+  }
+  .main p b{
+    color: #003874;
+  }
