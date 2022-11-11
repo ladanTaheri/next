@@ -3,7 +3,6 @@ import Link from 'next/link';
  import Flickity from "react-flickity-component";
 import styles from './Collection.module.css';
 import config from '../../../services/config.json';
-import { Image } from 'next/image';
 
 class Collection extends Component {
     state = {
@@ -35,7 +34,7 @@ class Collection extends Component {
 
                 <Flickity options={flickityOptions} className={styles.carousel}>
                     {this.props.items ? this.props.items.map(m => (
-                       <div key={m.id}><Link href='/product/[id]' as={`/product/${m.id}`}><Image src={`${config.api}/${m.mainPic.url}`} alt="" /></Link></div>
+                       <div key={m.id}><Link href='/product/[id]' as={`/product/${m.id}`}><img src={`${config.api}/${m.mainPic.url}`} alt="" /></Link></div>
                     )) : null}
 
                 </Flickity> 
