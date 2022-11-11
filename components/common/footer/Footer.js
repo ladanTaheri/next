@@ -33,20 +33,20 @@ class Footer extends Component {
 
                                 <ul>
                                     <li>
-                                        <Link href='/products/[name]' as='/products/سالنامه'><span className={`nav-link ${styles.navLink} px-2`} >سالنامه</span></Link>
+                                        <Link href='/products/[name]' as='/products/سالنامه' className={`nav-link ${styles.navLink} px-2`}>سالنامه</Link>
                                     </li>
                                     <li>
-                                        <Link href='/sets/[name]' as='/sets/ست های مدیریتی'><span className={`nav-link ${styles.navLink} px-2`} >ست های مدیریتی</span></Link>
+                                        <Link href='/sets/[name]' as='/sets/ست های مدیریتی'>ست های مدیریتی</Link>
                                     </li>
                                     <li>
-                                        <Link href='/products/[name]' as='/products/قلم های نفیس Carteie'><span className={`nav-link ${styles.navLink} px-2`}>قلم های نفیس</span></Link>
+                                        <Link href='/products/[name]' as='/products/قلم های نفیس Carteie' className={`nav-link ${styles.navLink} px-2`}>قلم های نفیس</Link>
                                     </li>
-                                    <Link href="/about"><li>
-                                        <span className={`nav-link ${styles.navLink} px-2`} >درباره اداک</span>
+                                    <Link href="/about" className={`nav-link ${styles.navLink} px-2`}><li>
+                                       درباره اداک
                                     </li></Link>
                     
-                                    <Link href="/blog"><li className="nav-item px-2">
-                                        <span className={`nav-link ${styles.navLink} px-2`} >بلاگ</span>
+                                    <Link href="/blog" className={`nav-link ${styles.navLink} px-2`}><li>
+                                       بلاگ
                                     </li></Link>
                                   
                                     {/* <li><a href="#">جاکلیدی</a></li>

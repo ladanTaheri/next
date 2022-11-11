@@ -1,4 +1,10 @@
 
+.links ul li {
+  text-decoration: none !important;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
 .links ul li a {
     text-decoration: none !important;
     color: #fff;
@@ -45,4 +51,6 @@
     background-color: #2a2a2a;
   }
   
-  
+  .navLink{
+    margin-bottom: 10px;
+  }
