@@ -9,7 +9,7 @@ class ProductSlider extends Component {
 
         return (
             <Carousel className="product">
-                {this.props.pics !== [] ? this.props.pics.map(m => <Carousel.Item ><img className={this.props.name === "Cartie" ? `d-block w-50 mojgan` : `d-block w-100 mojgan`}
+                {this.props.pics !== [] ? this.props.pics.map(m => <Carousel.Item  key={m.id}><img className={this.props.name === "Cartie" ? `d-block w-50 mojgan` : `d-block w-100 mojgan`}
                     src={`${config.api}${m.url}`}
                     alt={m.caption} /></Carousel.Item>) : null}
             </Carousel>

@@ -63,7 +63,7 @@ class Detail extends Component {
             {this.state.blog ? this.state.blog.description : null}
           </p>
           <p>برچسب ها  :</p>
-          {this.state.blog ? stringFormatToArrayFormat(this.state.blog.tags).map((i)=><span className={styles.tag}>{i}</span>) : null}
+          {this.state.blog ? stringFormatToArrayFormat(this.state.blog.tags).map((i)=><span className={styles.tag} key={i.id}>{i}</span>) : null}
         </div>
       </section>
     );

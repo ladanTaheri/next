@@ -43,7 +43,7 @@ class Product extends Component {
                     </div>
                 </header>
                 {/* <ProductSlider pics={this.state.pics} name={this.props.title}/> */}
-               { this.state.set ? <ProductSlider pics={this.state.set.sliderPics} name={this.state.set.name}/>: null} 
+               { this.state.set ? <ProductSlider pics={this.state.set.sliderPics} name={this.state.set.name} />: null} 
 
 
             </section>

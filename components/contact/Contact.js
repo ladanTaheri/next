@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import styles from './Contact.module.css';
-import MyMap from './Map';
+// import MyMap from './Map';
 class Contact extends Component {
     state = {}
     render() {
@@ -32,7 +32,7 @@ class Contact extends Component {
 
                 </section>
                 <div className={styles.contact_page_map}>
-                        <MyMap />
+                        {/* <MyMap /> */}
                     </div>
                 <div className={styles.messageBox}>
                     <div>

@@ -25,7 +25,7 @@ class Blog extends Component {
   render() {
     return (
       <div className={styles.cardWrapper}>
-        {this.state.blogs.map((b)=> <Item data={b}/>)}
+        {this.state.blogs.map((b)=> <Item data={b} key={b.id}/>)}
    
       </div>
     );
