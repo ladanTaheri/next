@@ -36,7 +36,7 @@ class SectionSlider extends Component {
                                 <img src="/images/home/category-sign.svg" alt="" />
                                 {this.props.title}
                             </h2></Link>
-                            <Link href='/products/[name]' as={href}><span>مشاهده همه</span></Link>
+                            <Link href='/products/[name]' as={href}>مشاهده همه </Link>
                         </div>
                     </div>
                 </header>

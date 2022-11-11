@@ -27,7 +27,7 @@ class Collection extends Component {
                                 <img src="/images/home/category-sign.svg" alt="" />
                                 {this.props.title}
                             </h2></Link>
-                            <Link href='/sets/[name]' as={href}><span>مشاهده همه</span></Link>
+                            <Link href='/sets/[name]' as={href}>مشاهده همه</Link>
                         </div>
                     </div>
                 </header>
