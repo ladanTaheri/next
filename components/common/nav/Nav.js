@@ -47,12 +47,7 @@ class Navig extends Component {
                                 <span className={`nav-link ${styles.navLink} px-2`}>تماس با اداک</span>
                             </li></Link>
                         </ul>
-                        <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-3 ml-sm-1" type="email" placeholder="ایمیل" aria-label="email" />
-                            <button className={`btn button-reverse my-2 my-sm-0 ${styles.joinBtn}`} type="submit">
-                                به ما بپیوندید
-                            </button>
-                        </form>
+                      
                     </div>
                 </nav>
 
@@ -87,14 +82,7 @@ class Navig extends Component {
                                 {/* *** */}
 
                             </Nav>
-                            <Nav>
-                                <form className="form-inline my-2 my-lg-0">
-                                    <input className="form-control mr-sm-3 ml-sm-1" type="email" placeholder="ایمیل" aria-label="email" />
-                                    <button className={`btn button-reverse my-2 my-sm-0 ${styles.joinBtn}`} type="submit">
-                                        به ما بپیوندید
-                                    </button>
-                                </form>
-                            </Nav>
+                         
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>

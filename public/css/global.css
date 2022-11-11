@@ -1,6 +1,15 @@
 @import '../fonts/nunitosans/css/font.css';
 @import '../fonts/iransans/css/font-farsi.css';
 @import '../fonts/anjoman/fontiran.css';
+
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+
+
 body {
     font-family: IRANSans;
     -webkit-user-select: none;
@@ -26,6 +35,7 @@ html {
 
 a, a:hover, a:active, a:focus, input:hover, input:active, input:focus, button:hover, button:visited, button:active, button:focus, .form-control:focus {
     outline: none !important;
+    text-decoration: none !important;
 }
 
 *:focus {
