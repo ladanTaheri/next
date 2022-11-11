@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-// import Flickity from "react-flickity-component";
+ import Flickity from "react-flickity-component";
 import styles from './Collection.module.css';
 import config from '../../../services/config.json';
+import { Image } from 'next/image';
 
 class Collection extends Component {
     state = {
@@ -32,12 +33,12 @@ class Collection extends Component {
                     </div>
                 </header>
 
-                {/* <Flickity options={flickityOptions} className={styles.carousel}>
+                <Flickity options={flickityOptions} className={styles.carousel}>
                     {this.props.items ? this.props.items.map(m => (
-                        <Link href='/product/[name]' as={`/product/${m.name}`}><div key={m.id}><Link href='/product/[id]' as={`/product/${m.id}`}><img key={m.id} src={`${config.api}/${m.mainPic.url}`} alt="" /></Link></div></Link>
+                       <div key={m.id}><Link href='/product/[id]' as={`/product/${m.id}`}><Image src={`${config.api}/${m.mainPic.url}`} alt="" /></Link></div>
                     )) : null}
 
-                </Flickity> */}
+                </Flickity> 
 
             </section>
         );

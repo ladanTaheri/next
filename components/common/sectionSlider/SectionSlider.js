@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Link from 'next/link';
-// import Flickity from "react-flickity-component";
+import Flickity from "react-flickity-component";
 import Item from "./card/Item";
 import styles from './SectionSlider.module.css';
 
@@ -41,10 +41,10 @@ class SectionSlider extends Component {
                     </div>
                 </header>
                 <section onPointerEnter={this.over} onPointerLeave={this.leave} className={this.state.flicktyClasses.join(' ')}>
-                    {/* <Flickity options={flickityOptions}>
+                    <Flickity options={flickityOptions}>
                         {this.props.items ? this.props.items.map(m => (<Item key={m.id} type={this.props.type} item={m} category={this.props.category}/>)) : null}
 
-                    </Flickity> */}
+                    </Flickity> 
                 </section>
             </section>
         );

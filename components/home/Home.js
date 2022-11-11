@@ -60,7 +60,7 @@ class NewHome extends Component {
             
                 <SectionSlider title="سالنامه" type="سالنامه" items={this.state.calenders} category='calendar'/>
                 <SectionSlider title="قلم های نفیس Carteie" type="قلم نفیس" items={this.state.pens} category='pen'/>
-                <Collection items={this.state.sets} title="ست های مدیریتی" category='set'/>
+                {/* <Collection items={this.state.sets} title="ست های مدیریتی" category='set'/> */}
                 <Catelogue/>
                 <Idea />
                 <About />
