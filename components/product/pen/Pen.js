@@ -42,7 +42,7 @@ class Pen extends Component {
 
                     </div>
                 </header>
-               { this.state.pen ? <ProductSlider pics={this.state.pen.sliderPic} name={this.state.pen.name}/>: null} 
+               { this.state.pen ? <ProductSlider pics={this.state.pen.sliderPic} name='Cartie'/>: null} 
 
 
             </section>
