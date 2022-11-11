@@ -71,6 +71,7 @@
 .messageBox{
   padding-left: 30%;
   display: block;
+  direction: rtl;
 }
 .contact_page_map {
   height: 340px !important;
