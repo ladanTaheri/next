@@ -8,8 +8,10 @@
 
 .carousel div img{
     margin-left: 24px;
-    width: 309px;
-    height: 200px;
+    /* width: 309px;
+    height: 200px; */
+    width: 237px;
+    height: 340px;
     cursor: pointer;
 }
 

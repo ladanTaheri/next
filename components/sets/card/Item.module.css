@@ -1,6 +1,6 @@
 .filmCard {
-    width: 309px;
-    height: 200px;
+    /* width: 309px;
+    height: 200px; */
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -17,8 +17,10 @@
 }
 
 .filmCard figure img {
-    width: 309px;
-    height: 200px;
+    /* width: 309px;
+    height: 200px; */
+    width: 237px;
+    height: 340px;
 }
 
 .filmCard figure {
