@@ -34,7 +34,7 @@ class HeaderSlider extends Component {
             <Carousel className={styles.carousel}>
 
         {this.state.items ? this.state.items.map(m => (
-          <Carousel.Item>
+          <Carousel.Item key={m.id}>
           <img className={imgClasses.join(' ')} src={`${config.api}${m.pic.url}`} alt={m.title}/>
           <Carousel.Caption className={styles.carouselCaption}><h2>{m.title}</h2><h3>{m.title2}</h3><a  href={m.link} className={`btn ${styles.btn}`}>مشاهده همه</a></Carousel.Caption>
           </Carousel.Item>
