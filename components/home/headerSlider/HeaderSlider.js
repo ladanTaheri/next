@@ -1,74 +1,44 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import styles from './HeaderSlider.module.css';
+import { getAllSliders } from './../../../services/sliderService';
+import config from '../../../services/config.json';
 
 class HeaderSlider extends Component {
+    state = {
+        items:[]
+    }
+
+    componentDidMount = () => {
+        this.handleGetItems();
+      };
+
+    handleGetItems = async () => {
+        console.log("cat");
+
+        try {
+          const { data, status } = await getAllSliders();
+          if (status === 200) {
+            this.setState({ items: data });
+            console.log(data);
+          }
+        } catch (err) {
+          console.error(err);
+        }
+      };
+
     render() {
 
         const imgClasses = ['d-block', 'w100', styles.item]
         return (
             <Carousel className={styles.carousel}>
-                <Carousel.Item>
-                    <img
-                        className={imgClasses.join(' ')}
-                        src="/images/slider/autumn-leaves.jpg"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption className={styles.carouselCaption}>
-                        <h2>سالنامه</h2>
-                        <h3>Calender year you obtain them</h3>
-                        <a  className={`btn ${styles.btn}`}>مشاهده همه</a>
 
-
-                    </Carousel.Caption>
-
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className={imgClasses.join(' ')}
-                        src="/images/slider/pen.jpg"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption className={styles.carouselCaption}>
-                        <h2>قلم های نفیس Carteie</h2>
-                        <h3>sumptuous writing</h3>
-                        <a  className={`btn ${styles.btn}`}>مشاهده همه</a>
-
-
-                    </Carousel.Caption>
-
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img
-                        className={imgClasses.join(' ')}
-                        src="/images/slider/man.jpg"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption className={styles.carouselCaption}>
-                        <h2>ست های مدیریتی</h2>
-                        <h3>A Trendy, luxury , Gift collection</h3>
-                        <a  className={`btn ${styles.btn}`}>مشاهده همه</a>
-
-
-                    </Carousel.Caption>
-
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img
-                        className={imgClasses.join(' ')}
-                        src="/images/slider/power-bank.jpg"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption className={styles.carouselCaption}>
-                        <h2>پاوربنک</h2>
-                        <h3>Gifting solution for all</h3>
-                        <a  className={`btn ${styles.btn}`}>مشاهده همه</a>
-
-                    </Carousel.Caption>
-
-                </Carousel.Item>
+        {this.state.items ? this.state.items.map(m => (
+          <Carousel.Item>
+          <img className={imgClasses.join(' ')} src={`${config.api}${m.pic.url}`} alt={m.title}/>
+          <Carousel.Caption className={styles.carouselCaption}><h2>{m.title}</h2><h3>{m.title2}</h3><a  href={m.link} className={`btn ${styles.btn}`}>مشاهده همه</a></Carousel.Caption>
+          </Carousel.Item>
+         )) : null}
 
 
 
