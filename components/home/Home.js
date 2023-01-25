@@ -30,7 +30,6 @@ class NewHome extends Component {
 
       handleGetDeskCalendar = async () => {
         console.log("desktop calendar");
-
         try {
           const { data, status } = await getAllDeskCalendars();
           if (status === 200) {

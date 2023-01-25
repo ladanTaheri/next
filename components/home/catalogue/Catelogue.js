@@ -1,7 +1,31 @@
 import React, { Component } from 'react';
 import styles from './Catelogue.module.css';
+import { getAllCatelogues } from './../../../services/catalogue';
+import config from '../../../services/config.json';
+
 class Catelogue extends Component {
-    state = {}
+    state = {
+        items:[]
+    }
+
+    componentDidMount = () => {
+        this.handleGetItems();
+      };
+
+    handleGetItems = async () => {
+        console.log("cat");
+
+        try {
+          const { data, status } = await getAllCatelogues();
+          if (status === 200) {
+            this.setState({ items: data });
+            console.log(data);
+          }
+        } catch (err) {
+          console.error(err);
+        }
+      };
+
     render() {
         return (
             <section className={styles.section}>
@@ -16,9 +40,12 @@ class Catelogue extends Component {
                     </div>
                 </header>
                 <section className={styles.section}>
-                    <div className={styles.cat}><img src="/images/pdf/calenders.jpg" alt="" /></div>
-                    <div className={styles.cat}><img src="/images/pdf/main.png" alt="" /></div>
-                    <div className={styles.cat}><img src="/images/pdf/set-1.jpg" alt="" /></div>
+
+                {this.state.items ? this.state.items.map(m => (
+                <div key={m.id} className={styles.cat}><a  target="_blank" href={`${config.api}${m.file.url}`}><img src={`${config.api}${m.cover.url}`} alt="" /></a></div>
+                )) : null}
+
+               
                 </section>
 
 
