@@ -42,7 +42,7 @@ class Catelogue extends Component {
                 <section className={styles.section}>
 
                 {this.state.items ? this.state.items.map(m => (
-                <div key={m.id} className={styles.cat}><a  target="_blank" href={`${config.api}${m.file.url}`}><img src={`${config.api}${m.cover.url}`} alt="" /></a></div>
+                <div key={m.id} className={styles.cat}><a href={`${config.api}${m.file.url}`}><img src={`${config.api}${m.cover.url}`} alt="" /></a></div>
                 )) : null}
 
                
