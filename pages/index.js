@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>اداک</title>
+        <title>سالنامه و هدایا اداک</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NewHome />
