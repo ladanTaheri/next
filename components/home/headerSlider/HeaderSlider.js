@@ -1,37 +1,38 @@
-import React, { Component } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import styles from './HeaderSlider.module.css';
-import { getAllSliders } from './../../../services/sliderService';
-import config from '../../../services/config.json';
+import React, { Component } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import styles from "./HeaderSlider.module.css";
+import { getAllSliders } from "./../../../services/sliderService";
+import config from "../../../services/config.json";
+
 
 class HeaderSlider extends Component {
-    state = {
-        items:[]
+  state = {
+    items: [],
+  };
+
+  componentDidMount = () => {
+    this.handleGetItems();
+  };
+
+  handleGetItems = async () => {
+    console.log("cat");
+
+    try {
+      const { data, status } = await getAllSliders();
+      if (status === 200) {
+        this.setState({ items: data });
+        console.log(data);
+      }
+    } catch (err) {
+      console.error(err);
     }
+  };
 
-    componentDidMount = () => {
-        this.handleGetItems();
-      };
-
-    handleGetItems = async () => {
-        console.log("cat");
-
-        try {
-          const { data, status } = await getAllSliders();
-          if (status === 200) {
-            this.setState({ items: data });
-            console.log(data);
-          }
-        } catch (err) {
-          console.error(err);
-        }
-      };
-
-    render() {
-
-        const imgClasses = ['d-block', 'w100', styles.item]
-        return (
-            <Carousel className={styles.carousel}>
+  render() {
+    const imgClasses = ["d-block", "w100", styles.item];
+    return (
+      <>
+        <Carousel className={styles.carousel}>
 
         {this.state.items ? this.state.items.map(m => (
           <Carousel.Item key={m.id}>
@@ -43,9 +44,11 @@ class HeaderSlider extends Component {
 
 
             </Carousel>
-       
-       );
-    }
+
+
+      </>
+    );
+  }
 }
 
 export default HeaderSlider;

@@ -1,0 +1,82 @@
+.carousel {
+  margin-top: 45px;
+}
+
+.carouselCaption {
+
+  bottom: 50px;
+  left: 10px;
+  top: auto;
+  right: auto;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  direction: rtl;
+}
+  
+  .carouselCaption p {
+    font-family: IRANSans ;
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+
+    /* color: #a1a3aa; */
+  }
+  
+  .carouselCaption p strong {
+    font-family: IRANSans;
+    font-size: 20px;
+    /* color: #ffffff; */
+    font-weight: 600;
+  }
+  
+  .carouselCaption h3 {
+    font-family: "NunitoSans";
+    font-size: 30px;
+    font-weight: bold;
+    /* color: #003874; */
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+ 
+  @media (max-width: 576px) {
+    .carousel {
+      display: flex !important;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  
+  @media (min-width: 576px) {
+    .carousel {
+      display: flex !important;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  
+  @media (min-width: 768px) {
+    .carousel {
+      display: flex !important;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  
+  @media (min-width: 992px) {
+    .carousel {
+      display: none !important;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  
+  @media (min-width: 1200px) {
+    .carousel {
+      display: none !important;
+    }
+  }
+  
+
+  

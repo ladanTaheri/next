@@ -169,7 +169,7 @@
 
 @media (min-width: 768px) {
   .carousel {
-    display: flex !important;
+    display: none !important;
   }
 }
 

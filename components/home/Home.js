@@ -11,6 +11,7 @@ import { getAllPens } from './../../services/penService';
 import { getAllSets } from '../../services/setService';
 import { getAllDeskCalendars } from './../../services/deskCalendarService';
 import { getAllWoodenArtifact } from './../../services/woodencalendar';
+import MobileSlider from './mobile/mobileSlider';
 class NewHome extends Component {
     state = {
         calenders:[],
@@ -87,6 +88,7 @@ class NewHome extends Component {
         return (
             <Fragment>
                 <HeaderSlider />
+                <MobileSlider/>
             
                 <SectionSlider title="سالنامه" type="سالنامه" items={this.state.calenders} category='calendar'/>
                 <SectionSlider title="تقویم رومیزی" type="رومیزی" items={this.state.desk_calenders} category='deskcalendar'/>
