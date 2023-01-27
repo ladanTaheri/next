@@ -74,6 +74,11 @@
   direction: rtl;
 }
 .contact_page_map {
-  height: 340px !important;
+  height: 450px !important;
+  width: 600px !important;
   margin-left: 30%;
+  direction: rtl !important;
+  text-align: right !important;
+  float: right;
+  margin-bottom: 50px;
 }
